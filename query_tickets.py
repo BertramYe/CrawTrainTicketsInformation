@@ -72,7 +72,11 @@ def get_tickets_infor(from_station,to_station,train_date):
 
     # 模仿；浏览器的headers信息，注意此时User-Agent和Cookie这两个参数一个都不能少
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36',
-                'Cookie':"_uab_collina=164960356237596763319356; JSESSIONID=91F0437B5F9987456A0302086E2669EA; BIGipServerotn=1440284938.50210.0000; BIGipServerpassport=988283146.50215.0000; guidesStatus=off; highContrastMode=defaltMode; cursorStatus=off; RAIL_EXPIRATION=1649894349342; RAIL_DEVICEID=MQ0pRFlsGXxSX2Yg6uWHfoM3XcBiSlEv6XBDNw6SZ7AjcNp1J-EHq5nbX-Kn_4gqKPrvzNE1kDsdyS5vyXscCeDNGYfqUojzmhgWACH2AqbY_kLBon2YZHvJItVVzdFtdFB4pC32vWcIAqpyB3LX_9sSaFwc-S62; route=c5c62a339e7744272a54643b3be5bf64; _jc_save_fromStation=%u5408%u80A5%2CHFH; _jc_save_toStation=%u5317%u4EAC%2CBJP; _jc_save_toDate=2022-04-10; _jc_save_wfdc_flag=dc; _jc_save_fromDate=2022-04-14"
+                'Cookie':"_uab_collina=164960356237596763319356; JSESSIONID=91F0437B5F9987456A0302086E2669EA; BIGipServerotn=1440284938.50210.0000; \
+                BIGipServerpassport=988283146.50215.0000; guidesStatus=off; highContrastMode=defaltMode; cursorStatus=off; RAIL_EXPIRATION=1649894349342; \
+                RAIL_DEVICEID=MQ0pRFlsGXxSX2Yg6uWHfoM3XcBiSlEv6XBDNw6SZ7AjcNp1J-EHq5nbX-Kn_4gqKPrvzNE1kDsdyS5vyXscCeDNGYfqUojzmhgWACH2AqbY_kLBon2YZHvJItVVzdFtdFB4pC32vWcIAqpyB3LX_9sSaFwc-S62;\
+                 route=c5c62a339e7744272a54643b3be5bf64; _jc_save_fromStation=%u5408%u80A5%2CHFH; _jc_save_toStation=%u5317%u4EAC%2CBJP;\
+                  _jc_save_toDate=2022-04-10; _jc_save_wfdc_flag=dc; _jc_save_fromDate=2022-04-14"
               }
     # 拼接查询链接字符串
     url = f'https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date={train_date}&leftTicketDTO.from_station={from_station}&leftTicketDTO.to_station={to_station}&purpose_codes=ADULT'

@@ -299,7 +299,6 @@ class Ui_MainWindow(object):
             # 如果返回False,代表输入有误，结束程序，直接return出去
             # 否则将检查的结果作为输出进行查询
             return
-
         # to_station='北京'
         # 获取目的地的值，并且去除前后空格
         # to_station=self.textEdit_target.toPlainText().strip()
@@ -321,8 +320,6 @@ class Ui_MainWindow(object):
             # 直接return出去，否则将检查的结果作为输出进行查询
             return  
         # train_date = self.dateEdit_start.dateTime().toString('yyyy-MM-dd')   # yyyy-MM-dd 用于格式化我们想要的输出内容，此时MM代表月份mm代表分钟
-
-        
         # 查询我们想要的内容的结果
         try:
             # 如果在请求车票信息过程中报错，那就直接报错，并显示出我们自定义的错误信息出来，并return不会导致程序崩溃
