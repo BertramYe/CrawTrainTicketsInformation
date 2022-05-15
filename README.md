@@ -13,3 +13,7 @@ there are some of the notes for the code file
 5. opreation_sqlite3.py   these codes which defined all functions of opreating the DB sqlite3 
 
 6. query_tickets.py       these codes which defined the functions of querying the tickets informations 
+
+7. windows.py             these codes which defined the home windows display and function when this application start
+
+8. windows.ui             this files is the PyQt5 desigine draft files
